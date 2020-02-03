@@ -8,9 +8,9 @@ var timer = setInterval(function() {
     if (t >= 0) {
     
         let days = Math.floor(t / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        let secs = Math.floor((t % (1000 * 60)) / 1000);
+        let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        let mins = Math.floor((t / 1000 / 60) % 60);
+        let secs = Math.floor((t / 1000) % 60);
     
         document.getElementById("root").innerHTML = days + "d " + hours + "h " + mins + "m " + secs + "s";
 
