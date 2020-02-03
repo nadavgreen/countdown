@@ -1,8 +1,8 @@
-var endDate = new Date("01 Jun 2020").getTime();
+var endDate = new Date("01 Jun 2020");
 
 var timer = setInterval(function() {
 
-    let now = new Date().getTime();
+    let now = new Date();
     let t = endDate - now;
     
     if (t >= 0) {
