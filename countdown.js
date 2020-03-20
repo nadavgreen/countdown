@@ -27,9 +27,9 @@ var timer = setInterval(function() {
         let lSecs = Math.floor((l / 1000) % 60);
     
         document.getElementById("root").innerHTML =
-            "<p>Audible:" aDays + "d " + aHours + "h " + aMins + "m " + aSecs + "s</p>"
-            + "<p>Meeting:" mDays + "d " + mHours + "h " + mMins + "m " + mSecs + "s</p>"
-            + "<p>Last Day:" lDays + "d " + lHours + "h " + lMins + "m " + lSecs + "s</p>";
+            "Audible:" aDays + "d " + aHours + "h " + aMins + "m " + aSecs + "s "
+            + "Meeting:" mDays + "d " + mHours + "h " + mMins + "m " + mSecs + "s "
+            + "Last Day:" lDays + "d " + lHours + "h " + lMins + "m " + lSecs + "s";
 
     } else {
 
