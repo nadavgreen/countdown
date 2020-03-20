@@ -27,7 +27,7 @@ var timer = setInterval(function() {
         let lMins = Math.floor((l / 1000 / 60) % 60);
         let lSecs = Math.floor((l / 1000) % 60);
     
-        document.getElementById("root").innerHTML = "Last Day: " + lDays + "d " + lHours + "h " + lMins + "m " + lSecs + "s ";
+        document.getElementById("root").innerHTML += "Last Day: " + lDays + "d " + lHours + "h " + lMins + "m " + lSecs + "s ";
         
     }
     
@@ -38,7 +38,7 @@ var timer = setInterval(function() {
         let aMins = Math.floor((a / 1000 / 60) % 60);
         let aSecs = Math.floor((a / 1000) % 60);
 
-        document.getElementById("root").innerHTML = "Audible: " + aDays + "d " + aHours + "h " + aMins + "m " + aSecs + "s";
+        document.getElementById("root").innerHTML += "Audible: " + aDays + "d " + aHours + "h " + aMins + "m " + aSecs + "s";
         
     } else {
 
