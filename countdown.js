@@ -1,6 +1,6 @@
-var audible = new Date("01 Jun 2020");
-var meeting = new Date("20 Apr 2020");
-var lastDay = new Date("12 May 2020");
+var audible = new Date("2020-06-01T09:00:00-04:00");
+var meeting = new Date("2020-04-20T16:30:00-04:00");
+var lastDay = new Date("2020-05-15T17:30:00-04:00");
 
 var timer = setInterval(function() {
 
